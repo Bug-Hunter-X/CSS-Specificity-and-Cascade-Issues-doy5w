@@ -1,0 +1,19 @@
+Several solutions exist, depending on your preference and coding style:
+
+1. **Increase Specificity:** Make the more important selector more specific.  If you want the `div p` rule to always override the `.special p` rule, you could rewrite the first rule as:
+
+```css
+div.special p { color: blue; }
+```
+
+This ensures the selector matches only the specific element you intend. 
+
+2. **Order Matters:** The cascade's importance is determined by its appearance in the CSS file.  Place more important styles later to override earlier styles.
+
+3. **Use `!important` (Use Sparingly!):** As a last resort, you can use the `!important` flag:
+
+```css
+div p { color: blue !important; }
+```
+
+However, overuse makes debugging and maintaining CSS difficult, so this should only be used when absolutely necessary.

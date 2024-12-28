@@ -1,0 +1,16 @@
+The CSS specificity rules can sometimes lead to unexpected results when multiple selectors target the same element.  For example, consider this scenario:
+
+```css
+div p { color: blue; }
+.special p { color: red; }
+```
+
+If you have an element like this:
+
+```html
+<div class="special">
+  <p>This is some text.</p>
+</div>
+```
+
+The text will be red, because the selector `.special p` is more specific than `div p`. However, understanding and debugging these specificity issues can be tricky.  Another example is accidentally overriding styles due to the cascade, where a later style rule might unintentionally overwrite a previous one.

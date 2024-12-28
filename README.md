@@ -1,0 +1,3 @@
+# CSS Specificity and Cascade Bug
+
+This repository demonstrates a common issue in CSS: unexpected styling due to specificity conflicts and the cascading order of stylesheets.  The `bug.css` file shows the problematic code, while `solution.css` offers a solution using more specific selectors or the `!important` flag (used cautiously).  Understanding CSS specificity is crucial for writing maintainable and predictable styles.
